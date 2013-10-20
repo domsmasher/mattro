@@ -1,0 +1,11 @@
+{
+    "name": "mattro",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "node ./server/server.js"
+    },
+    "dependencies": {
+        "express": "*",
+        "jade": "*"
+    }
+}
