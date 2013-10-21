@@ -7,7 +7,17 @@ html.no-js(lang='en')
         meta(name="description", content=description)
         meta(name="author", content=author)
         meta(name="viewport", content='width=device-width, initial-scale=1')
-        link(rel='stylesheet', href='/app/styles/output.css')
+
+
+        if production
+            link(rel='stylesheet', href='/app/styles/output.css')
+        else
+            link(rel='stylesheet', href='/src/styles/base.css')
     body
         block content
-        script(src='/app/scripts/build.min.js')
+
+        if production
+            script(src='/app/scripts/build.min.js')
+        else
+            script(src='/app/scripts/file1.js')
+            script(src='/app/scripts/file2.js')

@@ -19,7 +19,9 @@ app.use(express.cookieParser('mattro'));
 app.use(express.session());
 app.use(app.router);
 
-app.use(express.static(path.join(__dirname, 'client')));
+app.use(express.static(path.join(__dirname, '../client')));
+
+console.log(path.join(__dirname, '../client'));
 
 app.configure('development', function() {
     app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));

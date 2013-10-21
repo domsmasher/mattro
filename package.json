@@ -6,6 +6,8 @@
     },
     "dependencies": {
         "express": "*",
-        "jade": "*"
+        "jade": "*",
+        "stylus": "*",
+        "nib": "*"
     }
 }
